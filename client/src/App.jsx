@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className="text-default min-h-screen bg-white">
-      {!isEducatorRoute}
+      {!isEducatorRoute }
       <Navbar />
 
       <Routes>
