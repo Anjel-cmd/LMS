@@ -1,7 +1,35 @@
-/* @import must precede all other statements (besides @charset or empty @layer) */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-@import "tailwindcss";
+ /* @import must precede all other statements (besides @charset or empty @layer) */
+ @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"); 
+ @import "tailwindcss";
 
-* {
-  font-family: Outfit;
+ * {  font-family: Outfit; }
+
+@layer utilities {
+  /* Home Page Headings */
+  .text-home-heading-small {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .text-home-heading-large {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  /* Course Details Headings */
+  .text-course-details-heading-small {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .text-course-details-heading-large {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  /* Default text size */
+  .text-default {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
