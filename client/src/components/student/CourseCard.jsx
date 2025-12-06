@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { assets, dummyCourses } from './../assets/assets.js'
+import { assets, dummyCourses } from '../../assets/assets.js'
 import { AppContext } from '../../context/AppContext'
 
 const Coursecard = ({course}) => {
