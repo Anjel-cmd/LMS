@@ -60,6 +60,8 @@ const calculateChapterTime = (chapter) => {
         });
         return totalLectures;
     };
+
+    useEffect(() => {fetchAllCourses()}, []);
     
 
     const value ={
