@@ -77,6 +77,25 @@
 
   .rich-text li { margin-bottom: 8px; }
 
+  /* Course Card Width */
+  .max-w-course-card {
+    max-width: 500px;
   }
+
+  /* Bigger Image Utility */
+  .course-card-img-lg {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Bigger Shadow Utility */
+  .shadow-custom-card-lg {
+    box-shadow: 0px 10px 30px 6px rgba(0, 0, 0, 0.20);
+  }
+
+  }
+
+
 
 

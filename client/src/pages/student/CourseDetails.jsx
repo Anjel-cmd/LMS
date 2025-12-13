@@ -36,7 +36,7 @@ const toggleSection = (index)=> {
     <>
     <div className='min-h-screen bg-gradient-to-b from-cyan-100 to-white'>
 
-      <div className='pt-20 pb-20 pl-8 md:pl-6 lg:pl-40 pr-8 md:pr-32'>
+      <div className='pt-20 pb-20 pl-8 md:pl-6 lg:pl-40 pr-8 md:pr-32 flex flex-col lg:flex-row gap-10'>
       
 
       {/* left column */} 
@@ -101,9 +101,9 @@ const toggleSection = (index)=> {
         </div>
       
       {/* right column */}
-        <div className='max-w-course-card z-10 shadow-custom-card rounded-t md:rounded-none overflow-hidden bg-white min-w-[300px] sm:min-w-[420px]'>
+        <div className='max-w-course-card w-full lg:w-[580px] z-10 shadow-custom-card rounded- md:rounded-none overflow-hidden'>
           <img src={courseData.courseThumbnail} alt="" />
-          <div className='pt-5'>
+          <div className='p-5'>
             <div>
               <img className='w-3.5' src={assets.time_left_clock_icon} alt="time left clock icon" />
               <p className='text-red-500'><span className='font-medium'>5 days</span> left at this price!</p>
