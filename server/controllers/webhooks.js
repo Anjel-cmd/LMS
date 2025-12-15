@@ -49,12 +49,9 @@ export const clerkWebhooks = async (req, res)=>{
                 break;
         }
     } 
-    // catch (error) {
-    //     res.jsos({success: false, message: error.message})
-    catch (error) {
-    console.error(error)
-    res.status(500).json({ success: false, message: error.message })
-}
+     catch (error) {
+        res.jsos({success: false, message: error.message})
 
 
     }
+}
