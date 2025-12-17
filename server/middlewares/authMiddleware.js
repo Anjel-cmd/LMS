@@ -1,4 +1,4 @@
-import { clerkClient } from "@clerk/express"
+import { clerkClient, getAuth,  } from "@clerk/express"
 
 // Middleware ( Protect Educator Routes )
 export const protectEducator = async (req, res, next)=>{
@@ -12,6 +12,8 @@ export const protectEducator = async (req, res, next)=>{
 
         next()
     } catch (error) {
+        console.log(error);
+        
         res.json({success:false, message: error.message})
     }
 }
